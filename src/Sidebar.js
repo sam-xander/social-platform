@@ -22,7 +22,7 @@ function Sidebar() {
       </div>
       <div className="sidebar__stats">
         <div className="sidebar__stat">
-          <p>Who view you</p>
+          <p>Who viewed you</p>
           <p className="sidebar__statNumber">2,543</p>
         </div>
         <div className="sidebar__stat">
