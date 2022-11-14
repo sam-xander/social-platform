@@ -2,9 +2,9 @@ header {
   position: sticky;
   top: 0;
   display: flex;
-  background: white;
+  background: #15191c;
   justify-content: space-evenly;
-  border-bottom: 0.1px solid lightgray;
+  border-bottom: 1px solid #8d99ae20;
   padding: 10px 0;
   width: 100%;
   z-index: 999;
@@ -15,6 +15,7 @@ header {
 .header__left > img {
   object-fit: contain;
   height: 40px;
+  width: 100px;
   margin-right: 10px;
 }
 
@@ -22,17 +23,46 @@ header {
   padding: 10px;
   display: flex;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 999px;
   height: 22px;
   color: gray;
-  background: #eef3f8;
+  background: #8d99ae20;
+}
+.header__search:hover {
+  background: #8d99ae30;
 }
 .header__search > input {
   outline: none;
   border: none;
   background: none;
+  color: lightgray;
+  font-weight: 600;
 }
 
 .header__right {
   display: flex;
+}
+.header__button {
+  border: none;
+  background: #598df3;
+  color: #f1f1f1;
+  border-radius: 999px;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+}
+.header__button:hover {
+  filter: brightness(105%);
+  transition-duration: 200ms;
+}
+
+@media (max-width: 768px) {
+  .header__search {
+    display: none;
+  }
 }

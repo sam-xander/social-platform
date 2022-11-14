@@ -1,12 +1,14 @@
 .post {
-  background: white;
-  padding: 15px;
+  background: #272b3190;
+  border: 1px solid #8d99ae20;
+  padding: 15px 15px 5px 15px;
   margin-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .post__header {
   display: flex;
   margin-bottom: 10px;
+  color: lightgray;
 }
 .post__info {
   margin-left: 10px;
@@ -16,14 +18,14 @@
 }
 .post__info > p {
   font-size: 12px;
-  color: gray;
 }
 
 .post__body {
   overflow-wrap: anywhere;
+  color: #f3f3f3;
 }
 
 .post__buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }

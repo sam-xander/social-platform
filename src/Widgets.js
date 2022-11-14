@@ -38,14 +38,6 @@ function Widgets() {
         "Design Patterns in Software Development",
         "#tutorial #opensource #productivity #community"
       )}
-      {newsArticle(
-        "Why We're Breaking Up with CSS-in-JS",
-        "#javascript #react #css #typescript"
-      )}
-      {newsArticle(
-        "Advice for Junior Developers",
-        "#beginners #productivity #codenewbie #learning"
-      )}
     </div>
   );
 }
