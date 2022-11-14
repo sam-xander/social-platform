@@ -1,19 +1,10 @@
-import { Avatar } from "@mui/material";
 import React from "react";
-import { selectUser } from "./features/userSlice";
 import "./HeaderOption.css";
-import { useSelector } from "react-redux";
 
-function HeaderOption({ avatar, Icon, title, onClick }) {
-  const user = useSelector(selectUser);
+function HeaderOption({ Icon, title, onClick }) {
   return (
     <div onClick={onClick} className="headerOption">
       {Icon && <Icon className="headerOption__icon" />}
-      {avatar && (
-        <Avatar className="headerOption__icon" src={user?.photoUrl}>
-          {user?.email[0]}
-        </Avatar>
-      )}
       <h3 className="headerOption__title">{title}</h3>
     </div>
   );

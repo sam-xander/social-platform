@@ -68,7 +68,7 @@ function Feed() {
           <InputOption Icon={EventNoteIcon} title="Event" color="#c0cbcd" />
           <InputOption
             Icon={CalendarViewDayIcon}
-            title="Write article"
+            title="Article"
             color="#7fc15e"
           />
         </div>

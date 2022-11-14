@@ -3,6 +3,7 @@ import { auth } from "./firebase";
 import "./Login.css";
 import { useDispatch } from "react-redux";
 import { login } from "./features/userSlice";
+import logo from "./images/logo.png";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -56,33 +57,30 @@ function Login() {
   };
   return (
     <div className="login">
-      <img
-        src="https://news.hitb.org/sites/default/files/styles/large/public/field/image/500px-LinkedIn_Logo.svg__1.png?itok=q_lR0vks"
-        alt=""
-      />
+      <img src={logo} alt="" />
       <form>
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Full name (required if registering)"
+          placeholder="Full name (required when registering)"
           type="text"
         />
         <input
           value={profilePic}
           onChange={(e) => setProfilePic(e.target.value)}
-          placeholder="Profile pic URL (optional)"
+          placeholder="Profile picture URL (optional when registering)"
           type="text"
         />
         <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
+          placeholder="Email (test@gmail.com)"
           type="email"
         />
         <input
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
+          placeholder="Password (password)"
           type="password"
         />
         <button type="submit" onClick={loginToApp}>
@@ -95,6 +93,8 @@ function Login() {
           Register Now
         </span>
       </p>
+      <p>Enter any information and click register.</p>
+      <p>Or login with email and password.</p>
     </div>
   );
 }

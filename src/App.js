@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { useSelector, useDispatch } from "react-redux";
 import "./App.css";
 import { login, logout, selectUser } from "./features/userSlice";
@@ -32,16 +33,23 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Social Platform</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
 
       {!User ? (
         <Login />
       ) : (
-        <div className="app__body">
-          <Sidebar />
-          <Feed />
-          <Widgets />
-        </div>
+        <>
+          <Header />
+          <div className="app__body">
+            <Sidebar />
+            <Feed />
+            <Widgets />
+          </div>
+        </>
       )}
     </div>
   );
